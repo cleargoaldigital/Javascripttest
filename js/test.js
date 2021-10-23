@@ -63,9 +63,9 @@ totalBox.textContent = 'Total: N' + total.toFixed(3);
 
 // SEARCH BOX
 
-const searcReasult = document.querySelector('.row g-3');
-const searchInput = document.querySelector('.form-control');
-const searchBtn = document.querySelector('.btn');
+const searcReasult = document.querySelector('.output ul');
+const searchInput = document.querySelector('.output input');
+const searchBtn = document.querySelector('.output button');
 
 searchResult.innerHTML = '';
 
@@ -91,4 +91,38 @@ searchBtn.onclick = function() {
  searchInput.value = '';
  searchInput.focus();
  }
+}
+
+
+// Silly Story Generator
+
+const customName = document.getElementById('customname');
+const randomize = document.querySelector('.randomize');
+const story = document.querySelector('.story');
+
+function randomValueFromArray(array){
+  const random = Math.floor(Math.random()*array.length);
+  return array[random];
+}
+
+
+// add eventListener
+
+randomize.addEventListener('click', result);
+
+function result() {
+
+  if(customName.value !== '') {
+    let name = customName.value;
+
+  }
+
+  if(document.getElementById("uk").checked) {
+    let weight = Math.round(300);
+    let temperature =  Math.round(94);
+
+  }
+
+  story.textContent = '' ;
+  story.style.visibility = 'visible';
 }

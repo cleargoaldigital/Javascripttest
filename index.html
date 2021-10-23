@@ -33,7 +33,7 @@
 
        </section>
 
-       <section class="form">
+       <!-- <section class="form">
         <form class="row g-3">
             <div class="col-auto">
               <label for="searchinput" class="visually-hidden">Enter search term</label>
@@ -44,14 +44,68 @@
             </div>
           </form>
 
+       </section> -->
+
+       <section class="output">
+        <div class="container d-flex-column align-items-center justify-content-center">         
+
+        <h3>Search Output</h3>
+
+        
+
+           <form class="row g-3">
+
+            <div class="col-auto">
+              <input type="text" class="form-control" id="searchinput" placeholder="Enter search term">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            </div>
+            </div>
+          </form>
+
+          <ul>
+            
+        </ul>
+
        </section>
        
-       <section>
+       <section class="mx-4">
         <div class="mx-4 my-3 text-center">
             <label for="formFileMultiple" class="form-label">Upload your files here</label>
             <input class="form-control" type="file" id="formFileMultiple" multiple>
           </div>
        </section>
+
+       <section class="mx-5">
+        
+            <h2>Silly story generator</h2>
+        
+            
+        <body>
+            <div>
+              <label for="customname">Enter custom name:</label>
+              <input id="customname" type="text" placeholder="">
+            </div>
+            <div>
+              <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+              <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+            </div>
+            <div>
+              <button class="randomize">Generate random story</button>
+            </div>
+            <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+            <p class="story"></p>
+            
+        
+            
+          </body>
+        </html>
+       </section>
+
+
+
+
 
    </main>
 
